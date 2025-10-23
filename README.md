@@ -1,10 +1,4 @@
-# Adonisjs Pg-boss
-
-Pg-boss for AdonisJS.
-
-[AdonisJS](https://adonisjs.com/)
-
-[Pg-boss](https://timgit.github.io/pg-boss/#/)
+[Pg-boss](https://timgit.github.io/pg-boss/#/) for [AdonisJS](https://adonisjs.com/)
 
 > [!WARNING]
 > This package takes a somehow unconventional approach. Pgboss will run besides the AdonisJS http server, in the same process. You don't have to run it besides your main app.
