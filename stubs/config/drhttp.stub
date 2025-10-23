@@ -1,0 +1,9 @@
+{{{
+  exports({ to: app.configPath('pgboss.ts') })
+}}}
+
+import { defineConfig } from '@akago/adonisjs-pg-boss'
+
+export default defineConfig({
+
+})
