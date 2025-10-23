@@ -38,7 +38,8 @@
   "exports": {
     ".": "./build/index.js",
     "./provider": "./build/providers/pgboss_provider.js",
-    "./healthcheck": "./build/src/healthcheck.js"
+    "./healthcheck": "./build/src/healthcheck.js",
+    "./japa": "./build/src/japa.js"
   },
   "scripts": {
     "lint": "eslint",
@@ -85,7 +86,8 @@
     "entry": [
       "./index.ts",
       "./providers/pgboss_provider.ts",
-      "./src/healthcheck.ts"
+      "./src/healthcheck.ts",
+      "./src/japa.ts"
     ],
     "outDir": "./build",
     "clean": true,
