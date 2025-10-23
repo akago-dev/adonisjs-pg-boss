@@ -35,4 +35,9 @@ export default class PgBossProvider {
 
     this.app.container.singleton(PgBoss, async () => boss)
   }
+
+  async shutdown() {
+    const boss = await this.app.container.make(PgBoss)
+    await boss.stop()
+  }
 }
