@@ -11,7 +11,7 @@ Pg-boss for AdonisJS.
 > In a nodejs clustered environement, only one pgboss instance will consume jobs, others will have `schedule`, `supervise`, `migrate` set to `false`.
 
 
-> [!INFO]
+> [!NOTE]
 > At the moment, this package depends on "github:akago-dev/pg-boss#akago" (not the main repository) as we need [a feature that is not merged yet](https://github.com/timgit/pg-boss/pull/617).
 
 ## Installation
