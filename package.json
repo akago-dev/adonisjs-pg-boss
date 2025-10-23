@@ -37,7 +37,8 @@
   ],
   "exports": {
     ".": "./build/index.js",
-    "./provider": "./build/providers/pgboss_provider.js"
+    "./provider": "./build/providers/pgboss_provider.js",
+    "./healthcheck": "./build/src/healthcheck.js"
   },
   "scripts": {
     "lint": "eslint",
@@ -83,7 +84,8 @@
   "tsup": {
     "entry": [
       "./index.ts",
-      "./providers/pgboss_provider.ts"
+      "./providers/pgboss_provider.ts",
+      "./src/healthcheck.ts"
     ],
     "outDir": "./build",
     "clean": true,

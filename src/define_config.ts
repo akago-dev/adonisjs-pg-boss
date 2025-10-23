@@ -9,7 +9,14 @@
 
 import PgBoss from 'pg-boss'
 
-export type PgBossConfig = PgBoss.ConstructorOptions & {}
+export type PgBossConfig = PgBoss.ConstructorOptions & {
+  healthCheck?: {
+    /**
+     * If the number of pending jobs is above this threshold, the health check will return a warning
+     */
+    pendingCountWarningThreshold?: number
+  }
+}
 
 export function defineConfig<T extends PgBossConfig>(config: T): T {
   return config
