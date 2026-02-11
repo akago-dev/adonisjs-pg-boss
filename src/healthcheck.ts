@@ -1,7 +1,8 @@
 import { BaseCheck, Result } from '@adonisjs/core/health'
 import app from '@adonisjs/core/services/app'
 import type { HealthCheckResult } from '@adonisjs/core/types/health'
-import PgBoss from 'pg-boss'
+import type { JobStates } from 'pg-boss'
+import { PgBoss } from 'pg-boss'
 import { PgBossConfig } from './define_config.js'
 
 /** Health check for PgBoss
@@ -9,7 +10,7 @@ import { PgBossConfig } from './define_config.js'
  */
 export class PgBossCheck extends BaseCheck {
   name: string
-  pendingStates = [PgBoss.states.created, PgBoss.states.retry, PgBoss.states.active]
+  pendingStates: (keyof JobStates)[] = ['created', 'retry', 'active']
   pendingCountWarningThreshold = 100
 
   constructor(name: string) {

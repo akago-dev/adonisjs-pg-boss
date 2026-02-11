@@ -9,7 +9,7 @@
 
 import type { ApplicationService } from '@adonisjs/core/types'
 import cluster from 'node:cluster'
-import PgBoss from 'pg-boss'
+import { PgBoss } from 'pg-boss'
 import { PgBossConfig } from '../src/define_config.js'
 
 declare module '@adonisjs/core/types' {

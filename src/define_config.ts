@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-import PgBoss from 'pg-boss'
+import { ConstructorOptions } from 'pg-boss'
 
-export type PgBossConfig = PgBoss.ConstructorOptions & {
+export type PgBossConfig = ConstructorOptions & {
   healthCheck?: {
     /**
      * If the number of pending jobs is above this threshold, the health check will return a warning

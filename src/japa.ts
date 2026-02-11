@@ -1,6 +1,6 @@
 import app from '@adonisjs/core/services/app'
 import { Assert } from '@japa/assert'
-import PgBoss from 'pg-boss'
+import { PgBoss } from 'pg-boss'
 
 declare module '@japa/assert' {
   interface Assert {
