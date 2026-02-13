@@ -2,7 +2,7 @@
 {
   "name": "@akago/adonisjs-pg-boss",
   "description": "Pg-boss for AdonisJS.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publishConfig": {
     "access": "public",
     "tag": "latest"
