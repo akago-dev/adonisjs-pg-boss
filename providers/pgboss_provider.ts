@@ -41,3 +41,5 @@ export default class PgBossProvider {
     await boss.stop()
   }
 }
+
+export { PgBoss }
